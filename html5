@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<form>
+			请输入你的真实姓名：<input type="text" name="name"><br>
+			你的主页的网址：<input type=><br>
+			密码：<input type="password" name="pwd"><br>
+			<input type="submit" value="发送">
+			<input type="reset" value="重设">
+		</form>
+	</body>
+</html>
+
