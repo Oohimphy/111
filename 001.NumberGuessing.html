@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>猜数字小游戏</title>
+    <script type="text/javascript">
+    var Random = Math.floor(Math.random()*101)
+    alert("猜测一个0到100之间的整数")
+    for (var i = 1; ; i++ ) {
+      var val = prompt("第"+i+"次猜,请输入一个整形数字")
+      if (isNaN(val) || val > 100 || val < 0) {
+        alert("输入无效，请输入一个0到100之间的整数。")
+      } else {
+        if (val < Random) {
+          alert("太小了，请再猜一次。")
+        } else if (val > Random) {
+          alert("太大了，请再猜一次。")
+        } else if (val == Random) {
+          alert("恭喜你猜对了，这个数是"+val)
+          break
+        }
+      }
+    }
+    </script>
+  </head>
+  <body>
+ 
+  </body>
+</html>
